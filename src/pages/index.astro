@@ -7,6 +7,8 @@ import LayoutBase from "../layouts/LayoutBase.astro";
 ----------------------------------------------------------------*/
 import FortalezasCTA from "../components/FortalezasCTA/FortalezasCTA.astro";
 import Hero from "../components/Hero/Hero.astro";
+import SliderPrincipal from "../components/SliderPrincipal/SliderPrincipal.jsx";
+import "../components/SliderPrincipal/SliderPrincipal.css";
 import SliderClientes from "../components/SliderClientes/SliderClientes.jsx";
 import "../components/SliderClientes/SliderClientes.css";
 import Noticias from "../components/Noticias/Noticias.astro";
@@ -14,7 +16,7 @@ import PreguntasFrecuentes from "../components/PreguntasFrecuentes/PreguntasFrec
 import SliderProyectosRelevantes from "../components/SliderProyectosRelevantes/SliderProyectosRelevantes.jsx";
 import "../components/SliderProyectosRelevantes/SliderProyectosRelevantes.css";
 import BlogHome from "../components/BlogHome/BlogHome.astro";
-import CtaBrochure from "../components/CtaBrochure/CtaBrochure.astro"
+import CtaBrochure from "../components/CtaBrochure/CtaBrochure.astro";
 //SEO
 import { AstroSeo } from "@astrolib/seo";
 
@@ -49,21 +51,18 @@ import { AstroSeo } from "@astrolib/seo";
 />
 <LayoutBase title="Home ABSGroup">
   <!-- <Header /> -->
-  <!--1-->
 
-  <!-- <Hero />-->
+  <!-- <Hero /> -->
+  <SliderPrincipal client:load />
   <SliderProyectosRelevantes client:load />
   <PreguntasFrecuentes />
-<CtaBrochure />
-  <!-- <SliderClientes client:load /> -->
+  <CtaBrochure />
+  <FortalezasCTA />
+  <SliderClientes client:load />
 
   <!-- <BlogHome />
     <SliderProyectosRelevantes client:load />
     <Noticias />
     <PreguntasFrecuentes />  -->
-
-  <!-- FIN-->
-
-  <!-- CTA BROCHURE -->
 </LayoutBase>
 >

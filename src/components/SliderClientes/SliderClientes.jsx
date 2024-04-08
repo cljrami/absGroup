@@ -16,7 +16,7 @@ const SliderClientes = () => {
       <>
         <section id="features" className="px-2 max-w-5xl mx-auto">
           <div className="mx-auto flex max-w-[58rem] flex-col items-center text-center">
-            <h2 className="font-heading text-3xl sm:text-3xl md:text-5xl font-bold tracking-tight leading-none">
+            <h2 className="font-heading text-3xl sm:text-3xl md:text-4xl font-bold tracking-tight leading-none">
               Grandes Empresas Han Confiado En Nosotros Como Clientes
             </h2>
             <p className="leading-normal text-muted-foreground sm:text-lg sm:leading-7">
@@ -43,12 +43,12 @@ const SliderClientes = () => {
             keyboard={{
               enabled: false,
             }}
-            Pagination={{
-              clickable: true,
-            }}
+            // Pagination={{
+            // clickable: true,
+            //}}
             breakpoints={{
               320: {
-                slidesPerView: 1,
+                slidesPerView: 2,
                 spaceBetween: 10,
               },
               640: {

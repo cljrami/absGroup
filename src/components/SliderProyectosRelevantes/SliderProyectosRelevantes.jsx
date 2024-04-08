@@ -8,16 +8,16 @@ import "swiper/css/pagination";
 import "swiper/css/effect-coverflow";
 
 // import required modules
-import { Keyboard, EffectCoverflow } from "swiper/modules";
+import { Keyboard, EffectCoverflow /*Pagination*/ } from "swiper/modules";
 
 const SliderProyectosRelevantes = () => {
   return (
     <div className="p-9  text-focus-in" id="SliderProyectosRelevantes">
       <>
         <section id="features" className="px-2">
-          <div className="mx-auto flex max-w-[100%] flex-col  ">
-            <span className="inline-block mb-3 text-sm text-blue-500 font-bold tracking-widest">
-              Soluciónes De Ingeniería
+          <div className="mx-auto flex flex-col  ">
+            <span className="inline-block mb-3 text-sm text-blue-500  tracking-widest ">
+              Soluciónes En Ingeniería
             </span>
             <h2 className="text-slate-200 font-heading text-3xl sm:text-3xl md:text-4xl font-bold tracking-tight leading-none">
               Proyecto Relevantes
@@ -43,9 +43,7 @@ const SliderProyectosRelevantes = () => {
             keyboard={{
               enabled: true,
             }}
-            Pagination={{
-              clickable: true,
-            }}
+            //pagination={true}
             breakpoints={{
               320: {
                 slidesPerView: 1,
@@ -64,8 +62,8 @@ const SliderProyectosRelevantes = () => {
                 spaceBetween: 10,
               },
             }}
-            pagination={true}
-            modules={[EffectCoverflow, Keyboard]}
+            //pagination={true}
+            modules={[EffectCoverflow, Keyboard /*Pagination*/]}
             className="SliderProyectosRelevantes"
           >
             <SwiperSlide>
