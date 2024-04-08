@@ -1,0 +1,28 @@
+---
+import Footer from "../components/Footer/Footer.astro";
+import "../../src/Estilos/Global.css";
+import NavBar from "../components/NavBar/NavBar.astro";
+---
+
+<html lang="ES">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+    <script
+      src="https://kit.fontawesome.com/acf431a76a.js"
+      crossorigin="anonymous"></script>
+  </head>
+  <body class="bg-slate-900">
+    <NavBar />
+    <main>
+      <slot />
+    </main>
+    <Footer />
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"
+    ></script>
+  </body>
+</html>

@@ -1,0 +1,27 @@
+
+
+.SliderClientes{
+    margin: 20px 0 20px 0;
+    cursor: ew-resize;
+}
+
+.SliderClientes .swiper {
+    width: 100%;
+    height: 100%;
+
+}
+
+.SliderClientes .swiper-slide {
+
+    background: transparent;
+    display: flex;
+    flex-direction: column;
+}
+
+.SliderClientes .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+
+}

@@ -1,0 +1,69 @@
+---
+import "animate.css";
+
+import LayoutBase from "../layouts/LayoutBase.astro";
+/*-------------------------------------------------------------- 
+## COMPONENTES
+----------------------------------------------------------------*/
+import FortalezasCTA from "../components/FortalezasCTA/FortalezasCTA.astro";
+import Hero from "../components/Hero/Hero.astro";
+import SliderClientes from "../components/SliderClientes/SliderClientes.jsx";
+import "../components/SliderClientes/SliderClientes.css";
+import Noticias from "../components/Noticias/Noticias.astro";
+import PreguntasFrecuentes from "../components/PreguntasFrecuentes/PreguntasFrecuentes.astro";
+import SliderProyectosRelevantes from "../components/SliderProyectosRelevantes/SliderProyectosRelevantes.jsx";
+import "../components/SliderProyectosRelevantes/SliderProyectosRelevantes.css";
+import BlogHome from "../components/BlogHome/BlogHome.astro";
+import CtaBrochure from "../components/CtaBrochure/CtaBrochure.astro"
+//SEO
+import { AstroSeo } from "@astrolib/seo";
+
+//import { formatList } from "astro/runtime/server/render/util.js";
+//import type { isAstroComponentFactory } from "astro/runtime/server/render/astro/factory.js";
+---
+
+<AstroSeo
+  title="Empresa de Ingenieria, Montaje y Construcción - ABS Group  "
+  description="Ingenieria y construccion"
+  canonical="https://www.absgroup.cl/"
+  openGraph={{
+    url: "https://www.absgroup.cl/",
+    title: "Grupo Abs",
+    description: "Grupo Abs",
+    images: [
+      {
+        url: "https://www.absgroup.cl/og-image-01.jpg",
+        width: 800,
+        height: 600,
+        alt: "Og Image Alt",
+        type: "image/jpeg",
+      },
+    ],
+    site_name: "AbsGroup CHIle",
+  }}
+  twitter={{
+    handle: "@handle",
+    site: "@site",
+    cardType: "summary_large_image",
+  }}
+/>
+<LayoutBase title="Home ABSGroup">
+  <!-- <Header /> -->
+  <!--1-->
+
+  <!-- <Hero />-->
+  <SliderProyectosRelevantes client:load />
+  <PreguntasFrecuentes />
+<CtaBrochure />
+  <!-- <SliderClientes client:load /> -->
+
+  <!-- <BlogHome />
+    <SliderProyectosRelevantes client:load />
+    <Noticias />
+    <PreguntasFrecuentes />  -->
+
+  <!-- FIN-->
+
+  <!-- CTA BROCHURE -->
+</LayoutBase>
+>
