@@ -58,7 +58,7 @@ const SliderPrincipal = () => {
             modules={[/*EffectCoverflow,*/ Keyboard, Navigation]}
             className="SliderPrincipal"
           >
-            <SwiperSlide>Slider 1</SwiperSlide>
+            <SwiperSlide>Hero 1</SwiperSlide>
             <SwiperSlide>1zxczxczxczxczx</SwiperSlide>
             <SwiperSlide>1xzczxczxczxc</SwiperSlide>
             <SwiperSlide>1zxczxczxczxc</SwiperSlide>
