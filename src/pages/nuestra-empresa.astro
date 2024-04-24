@@ -1,5 +1,5 @@
 ---
-import "animate.css";
+//import "animate.css";
 
 import LayoutBase from "../layouts/LayoutBase.astro";
 /*-------------------------------------------------------------- 
@@ -37,110 +37,170 @@ import { AstroSeo } from "@astrolib/seo";
 />
 <LayoutBase title="Home ABSGroup">
   <!-- Presentacion -->
-  <section class="container prose lg:prose-2xl mx-auto px-9">
-    <article>
-      <header class="w-full mx-auto text-focus-in">
-        <p class="flex items-center">
-          <a
-            href=""
-            class="text-white font-extralight text-base hover:underline no-underline"
-            ><i class="fa-solid fa-chevron-left"></i> Volver al Index</a
-          >
-        </p>
-        <span>Presentacion ABS Group</span>
-        <h1 class="text-focus-in text-slate-100 text">
-          Nuestro Grupo: La empresa
-        </h1>
-      </header>
-      <figure>
-        <img
-          class="rounded shadow"
-          alt="A vintage, blue, slightly rusted truck with a woooden bed overflowing with pumpkins on an gloomy overcast day. Surounding the truck are beautiful orange and white pumpkins varrying from small to large."
-          src="https://images.unsplash.com/photo-1571030701211-aa96da577e91?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
-        />
-        <figcaption class="italic text-lg md:text-sm">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias sunt,
-          eos excepturi ducimus omnis eius ipsum eaque odio voluptates enim
-          expedita aliquid saepe consectetur id voluptate dolorum consequuntur
-          minima nihil!
-        </figcaption>
-      </figure>
-      <div class="md:px-8">
-        <h2 class="text-slate-100">Titulo Secundario</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis
-          commodi earum quisquam tempora voluptatem aperiam eos! Assumenda
-          neque, modi tenetur odio, excepturi odit, cumque doloribus vero maxime
-          animi vel commodi?
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec
-          odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla
-          quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent
-          mauris. Fusce nec tellus sed augue semper porta. Mauris massa.
-          Vestibulum lacinia arcu eget nulla.
-        </p>
-        <p>
-          <b>Lorem ipsum dolor sit amet, consectetur adipiscing elit</b>. Class
-          aptent taciti sociosqu ad litora torquent per conubia nostra, per
-          inceptos himenaeos. <b
-            >Lorem ipsum dolor sit amet, consectetur adipiscing elit</b
-          >. Curabitur sodales ligula in libero. Sed dignissim lacinia nunc.
-          Curabitur tortor. Pellentesque nibh. Aenean quam. In scelerisque sem
-          at dolor. Maecenas mattis. Sed convallis tristique sem. Proin ut
-          ligula vel nunc egestas porttitor. Morbi lectus risus, iaculis vel,
-          suscipit quis, luctus non, massa. Fusce ac turpis quis ligula lacinia
-          aliquet. Mauris ipsum.
-        </p>
-        <p>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel ullam
-          nulla animi laboriosam. Ex doloremque sit obcaecati, facere fugit quas
-          reprehenderit aspernatur dolores rerum eaque eius fuga animi eum
-          dolorem.
-        </p>
-        <h2 class="text-slate-200">Lorem ipsum</h2>
-        <img
-          alt="image of a happy dog with short black hair staring up at his owner"
-          class="rounded"
-          src="https://picsum.photos/id/237/1200/500"
-        />
-        <p>
-          <b>Lorem Ipsum</b>Lorem ipsum dolor sit amet consectetur adipisicing
-          elit. Veniam veritatis laboriosam consectetur nemo aliquam ut, dolor
-          ab, deleniti quis sed architecto incidunt? Quod, non? Dolorum
-          consequatur atque repudiandae ratione ex?
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto,
-          sapiente cum fugit beatae est harum nam dolorum sed atque vero quia
-          numquam, debitis cumque rem dolor ut eveniet molestiae quam!
-        </p>
-        <section class="mb-6">
-          <h2 class="text-slate-100">Más</h2>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean magna nulla,
-          semper nec bibendum nec, aliquet a augue. Integer laoreet elit vel est
-          finibus, ac fringilla dolor mollis. Sed eget faucibus tellus. Duis rutrum
-          ullamcorper nisi, nec faucibus nisi faucibus sed.
-          <div class="mb-6 pb-2">
-            <ul class="text-lg ml-2">
-              <li>
-                <a
-                  href="#"
-                  class="text-blue-900 font-semibold ml-2 no-underline hover:underline"
-                  >Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a
-                >
-              </li>
-            </ul>
-          </div>
-        </section>
-      </div>
-    </article>
-  </section>
-  <!-- Descripcion NUestra Empresa -->
 
-  <!-- Sticky Share Group -->
-  <div class="sticky bottom-6 inset-x-0 text-center">
-    descarga nuetro brochure
-  </div>
-  <!-- End Sticky Share Group -->
+  <section class="overflow-hidden">
+    <section class="mb-16">
+      <div
+        class="relative overflow-hidden bg-no-repeat bg-cover"
+        style="background-position: 50%; background-image: url('https://www.absgroup.cl/Imagenes/Home/nosotros.webp'); height: 500px;"
+      >
+      </div>
+
+      <div class="mx-auto">
+        <div class="text-center text-gray-800">
+          <div class="mt-20">
+            <h1
+              class="text-3xl md:text-4xl xl:text-5xl font-bold tracking-tight mb-12"
+            >
+              Nuestra Empresa<br /><span class="text-blue-600"
+                ><a href="#hola">Group ABS</a></span
+              >
+            </h1>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="px-8 lg:px-24">
+      <div class="w-full h-px bg-gray-200"></div>
+      <div class="flex items-center justify-between flex-wrap gap-4 py-5">
+        <div class="flex items-center gap-4 flex-wrap">
+          <img
+            class="h-24 w-24 rounded-full"
+            src="../Imagenes/Home/omar_salgado_ceo_absgroup.webp"
+            alt="Omar Salgado CEO ABS Group"
+          />
+
+          <div>
+            <p class="text-lg font-semibold">Omar Salgado S.</p>
+            <span class="text-gray-500 font-medium">CEO & FOUNDER</span>
+          </div>
+        </div>
+      </div>
+      <div class="w-full h-px bg-gray-200 mb-12"></div>
+      <h2 class="text-xl lg:text-4xl font-bold mb-6 capitalize">
+        Descripción General
+      </h2>
+      <p class="text-gray-700 font-medium text-lg mb-6 text-justify">
+        <strong>Group ABS Ingeniería y Construcción,</strong> es una empresa conformada
+        por ingenieros con experiencia, los cuales hace más de una década se unen
+        para componer un equipo que ha sido capaz de ejecutar proyectos en las áreas
+        de Ingeniería, Construcción, Servicios y Montaje industrial.<br /><br />
+        Desde sus inicios, el principal objetivo es ser una empresa reconocida por
+        enfocarse en el cliente entregando compromiso, solidez, prestigio y excelencia.<br
+        /><br /> Lo anterior, se respalda en los distintos proyectos ejecutados,
+        que han entregado soluciones integrales a diferentes sectores productivos,
+        tales como: minero, forestal, siderúrgico, petroquímico, industrial, comercial
+        y edificaciones
+      </p>
+
+      <h2 class="text-xl lg:text-4xl font-bold mb-6 capitalize">Fundamentos</h2>
+
+      <p class="text-gray-700 font-medium text-lg mb-6 text-justify">
+        <span class="text-gray-900 font-bold">Misión:</span>
+        <span
+          >Satisfacer las necesidades, entregando soluciónes y estrategias a
+          nuestros clientes. A su vez cumplir con eficiencia y eficacia los
+          requerimientos solicitados, cumpliendo con los plazos y presupuestos,
+          contando en la ejecución de los servicios con un equipo de
+          profesionales calificados y comprometidos.</span
+        >
+      </p>
+      <p class="text-gray-700 font-medium text-lg mb-6 text-justify">
+        <span class="text-gray-900 font-bold">Visión:</span>
+        <span
+          >Ser una empresa posicionada, consolidada y reconocida en el área de
+          los servicios prestados, por su capacidad de gestión y personal
+          calificado. Trato respetuoso y preferencial a nuestros clientes.
+          Buscando la innovación en nuestros servicios, con el objetivo de dar
+          rápida solución a los requerimientos solicitados, marcando la
+          diferencia en el rubro minero, industrial, privado, público y
+          gubernamental.</span
+        >
+      </p>
+      <p class="text-gray-700 font-medium text-lg">
+        <h2 class="text-xl lg:text-4xl font-bold mb-6 capitalize">Valores</h2>
+        <ol class="text-gray-700 font-medium text-lg mb-6 capitalize">
+          <li>- Honestidad y Honradez.</li>
+          <li>- Trabajo en Equipo.</li>
+          <li>- Respeto, diálogo y cercanía</li>
+          <li>
+            - Reconocimiento del trabajo bien hecho, el esfuerzo y los
+            resultados
+          </li>
+          <li>- Innovación y Formación continua.</li>
+          <li>- Organización, Orden y Limpieza.</li>
+        </ol>
+      </p>
+      <div class="text-center text-gray-800">
+        <div class="mt-20">
+          <h1
+            class="text-3xl md:text-4xl xl:text-5xl font-bold tracking-tight mb-12"
+          >
+            Socios<br /><span class="text-blue-600"
+              ><a href="#hola">Estratégicos</a></span
+            >
+          </h1>
+        </div>
+      </div>
+      <p class="text-gray-700 font-medium text-lg text-justify">
+        <span
+          >A partir del año 2024, considerando panorama actual de la economía en
+          Chile, junto al entorno dinámico de los mercados y alta competitividad
+          en la industria, GROUP ABS Ingeniería y Construcción establece una
+          importante alianza estratégica, con las siguientes empresas:
+
+          <div class="pt-3">
+            <a
+              href="http://rsmconstructora.cl/"
+              target="_blank"
+              class="text-xl mb-4 text-blue-900 font-bold hover:underline"
+              ><img src="../Imagenes/Clientes/rsm.webp" /> Visitar Sitio Web</a
+            >
+            <p class="text-gray-700 font-medium text-lg text-justify">
+              Empresa dedicada a prestar servicios de ingeniería y construcción
+              en el sector Comercial, Industrial, Energía y Minería. Con más de
+              15 años de trayectoria y experiencia profesional.
+            </p>
+          </div>
+          <div class="pt-3">
+            <a
+              href="https://www.leanvalv-spa.com/"
+              class="text-xl mb-4 text-blue-900 font-bold hover:underline"
+              target="_blank"
+              ><img src="../Imagenes/Clientes/leanv.webp" /> Visitar Sitio Web
+            </a>
+            <p class="text-gray-700 font-medium text-lg text-justify">
+              Empresa especialistas en Gestión del Mantenimiento de Activos con
+              relación en válvulas de control y Lean Manufacturing.
+            </p>
+          </div>
+        </span>
+
+        <div
+          class="rounded-lg px-6 py-4 flex items-center flex-wrap gap-2 bg-gray-50 border border-gray-200 mb-5 text-center mt-10"
+        >
+          <p class="text-gray-700 text-lg capitalize">
+            El objetivo de esta alianza es el fortalecimiento Corporativo;
+            desarrollar mayores ventajas competitivas aumentando la propuesta de
+            valor conjunta; diversificar y expandir el área de trabajo,
+            potenciar la Administración y Gestión Comercial.
+          </p>
+          <div class="text-gray-700 text-lg text-center items-center w-full">
+            ¿Más sobre <a
+              href=""
+              class="text-blue-900 font-semibold hover:underline">Nosotros?</a
+            >
+            <a
+              class="inline-flex items-center justify-center bg-blue-900 text-lg font-light text-white shadow-sm transition-all duration-150 rounded-xl px-8 py-4 hover:bg-blue-900 hover:text-stone-200 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+              href="https://www.absgroup.cl/Descargas/AbsGroup.pdf"
+              target="_blank"
+              ><i class="fas fa-file-pdf text-md" aria-hidden="true"></i>
+              Descargar Brochure</a
+            >
+          </div>
+        </div>
+      </p>
+    </div>
+  </section>
 </LayoutBase>

@@ -1,17 +1,15 @@
 ---
-import "animate.css";
+//import "animate.css";
 
 import LayoutBase from "../layouts/LayoutBase.astro";
 /*-------------------------------------------------------------- 
 ## COMPONENTES
 ----------------------------------------------------------------*/
 import FortalezasCTA from "../components/FortalezasCTA/FortalezasCTA.astro";
-import Hero from "../components/Hero/Hero.astro";
 import SliderPrincipal from "../components/SliderPrincipal/SliderPrincipal.jsx";
 import "../components/SliderPrincipal/SliderPrincipal.css";
 import SliderClientes from "../components/SliderClientes/SliderClientes.jsx";
 import "../components/SliderClientes/SliderClientes.css";
-import Noticias from "../components/Noticias/Noticias.astro";
 import PreguntasFrecuentes from "../components/PreguntasFrecuentes/PreguntasFrecuentes.astro";
 import SliderProyectosRelevantes from "../components/SliderProyectosRelevantes/SliderProyectosRelevantes.jsx";
 import "../components/SliderProyectosRelevantes/SliderProyectosRelevantes.css";
@@ -19,19 +17,23 @@ import BlogHome from "../components/BlogHome/BlogHome.astro";
 import CtaBrochure from "../components/CtaBrochure/CtaBrochure.astro";
 //SEO
 import { AstroSeo } from "@astrolib/seo";
+import ServiciosHome from "../components/ServiciosHome/ServiciosHome.astro";
+import CallToAction from "../components/CallToAction/CallToAction.astro";
+import { Navbar } from "flowbite-react";
+import NuestrasFortalezas from "../components/NuestrasFortalezas/NuestrasFortalezas.astro";
 
 //import { formatList } from "astro/runtime/server/render/util.js";
 //import type { isAstroComponentFactory } from "astro/runtime/server/render/astro/factory.js";
 ---
 
 <AstroSeo
-  title="Empresa de Ingenieria, Montaje y Construcción - ABS Group  "
+  title="Empresa de Ingenieria, Montaje y Construcción - Group ABS  "
   description="Ingenieria y construccion"
   canonical="https://www.absgroup.cl/"
   openGraph={{
     url: "https://www.absgroup.cl/",
     title: "Grupo Abs",
-    description: "Grupo Abs",
+    description: "Empresa de Ingenieria, Montaje y Construcción -  Group ABS",
     images: [
       {
         url: "https://www.absgroup.cl/og-image-01.jpg",
@@ -41,7 +43,7 @@ import { AstroSeo } from "@astrolib/seo";
         type: "image/jpeg",
       },
     ],
-    site_name: "AbsGroup CHIle",
+    site_name: "GroupABS CHIle",
   }}
   twitter={{
     handle: "@handle",
@@ -49,20 +51,11 @@ import { AstroSeo } from "@astrolib/seo";
     cardType: "summary_large_image",
   }}
 />
-<LayoutBase title="Home ABSGroup">
-  <!-- <Header /> -->
-
+<LayoutBase title="Home GroupABS">
   <!-- <Hero /> -->
   <SliderPrincipal client:load />
+  <ServiciosHome />
   <SliderProyectosRelevantes client:load />
-  <PreguntasFrecuentes />
-  <CtaBrochure />
-  <FortalezasCTA />
+  <NuestrasFortalezas />
   <SliderClientes client:load />
-
-  <!-- <BlogHome />
-    <SliderProyectosRelevantes client:load />
-    <Noticias />
-    <PreguntasFrecuentes />  -->
 </LayoutBase>
->

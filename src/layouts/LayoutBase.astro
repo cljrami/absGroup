@@ -2,25 +2,30 @@
 import Footer from "../components/Footer/Footer.astro";
 import "../../src/Estilos/Global.css";
 import NavBar from "../components/NavBar/NavBar.astro";
+//import BtnDescargar from "../components/BtnDescargar/BtnDescargar.astro";
 ---
 
 <html lang="ES">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="https://www.absgroup.cl/favicon.ico"
+    />
 
     <script
       src="https://kit.fontawesome.com/acf431a76a.js"
       crossorigin="anonymous"></script>
   </head>
-  <body class="bg-slate-900">
+  <body>
     <NavBar />
     <main>
       <slot />
     </main>
     <Footer />
-
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"
     ></script>
